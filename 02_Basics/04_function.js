@@ -7,11 +7,11 @@ function myName(){   //function ->keyword, myName -> function name, ()->function
 }
  // myName()  //myName -> reference,myName()-> function execution
 
- function addNum(num1,num2){  // here (num1,num2) are parameters used in function declaration 
+ function addNum(num1,num2){  // here 💥(num1,num2) are parameters used in function declaration 
     console.log(num1+num2)
  }
  let result = addNum(8,6)  // (3,"4") -> 34(converted into string) and many more...
- // here(8,6) are the arguments used in function calling
+ // here 💥(8,6) are the arguments used in function calling
  console.log(result)  // will not return any value from function becoz we didnt return any
  // value from function
 
