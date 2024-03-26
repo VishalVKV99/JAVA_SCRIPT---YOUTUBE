@@ -10,18 +10,18 @@ function addCartPrize1(val1,val2,val3,...num1){ // 💥💥here first 3 argument
     return num1
 }
 console.log(addCartPrize1(210,55,307,800,305))
-
+//****************************************************************************** */
 // how to use objects in function ⬇️
 
 
 const user ={
     name:" Risu",
-    age: 20,
+    weight: 500,
     number:958413460
 }
 
 function handleObjects(anyUser){
-    console.log(`User Name is ${anyUser.name}, Age is ${anyUser.age} and number is ${anyUser.number}`)
+    console.log(`User Name is ${anyUser.name}, weight is ${anyUser.weight} and number is ${anyUser.number}`)
 }
    console.log(user)
 
@@ -30,7 +30,7 @@ function handleObjects(anyUser){
 //and another will print in string format
 handleObjects({
     name:"motu",
-    age:90,
+    weight:90,
     number:9411214101
 })
 
