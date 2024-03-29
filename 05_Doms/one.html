@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To DOM Learning. </title>
+    <style>
+        .bg-black {
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <style>
+        .bg-black {
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
+    <div class="bg-black">
+        <hl id="title" class="Heading Name">Welcome To DOM Learning<span style="display: none;">test text</span> </hl>
+        <p>Lorem ipsum dolor sit amet consecsgsfsfg fglj vk ugdiugsdfi siius dabore.</p>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+
+        <!--document.querySelector('input[type="password"]')-->
+        <input type="password" name="" id="">
+
+        <!--Example of Unorderd List ,shortcut to use ul list ->  ul>li*6-->
+        <ul>
+            <!-- here we use querySelector to change clor,font,ets of any targeted list below
+        Here we can add variable names of them, color, style on each different sector,padding,etc.
+
+
+
+            document.querySelector('ul')
+    const ulVar =document.querySelector('ul')
+undefined
+ulVar.querySelector('li')
+const liColor =ulVar.querySelector('li')
+undefined
+lico
+VM1679:1 Uncaught ReferenceError: lico is not defined
+    at <anonymous>:1:1
+liColor.style.backgroundColor="red"
+'red'
+liColor.innerHTML
+'one'
+liColor.innerHTML('li')
+VM1799:1 Uncaught TypeError: liColor.innerHTML is not a function
+    at <anonymous>:1:9
+liColor.innerHTML = "ten"
+'ten'
+﻿
+
+.-->
+
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">Four</li>
+            <li class="list-item">Five</li>
+            <li class="list-item">Six</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
+
+
+<!--
+    we can also use querySelectorAll int which too many prototypes are present ex:-> forEach etc..
+
+
+
+
+        document.querySelectorAll('li')
+NodeList(6) [li, li, li, li, li, li]0: li1: li2: li3: li4: li5: lilength: 6[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()length: 1name: "forEach"arguments: (...)caller: (...)[[Prototype]]: ƒ ()[[Scopes]]: Scopes[0]item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+const tempLi = document.querySelectorAll('li')
+undefined
+tempLi
+NodeList(6) [li, li, li, li, li, li]0: li1: li2: li3: li4: li5: lilength: 6[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+tempLi[0].style.color = "red"
+'red'
+tempLi[0].style.color = "blue"
+'blue'
+tempLi[1].style.color = "green"
+'green'
+tempLi[2].style.color = "pink"
+'pink'
+tempLi[4].style.color = "yellow"
+'yellow'
+tempLi.forEach( (i)=> {
+    i.style.backgroundColor = "skyblue"
+})
+-->
+
+
+<!--
+**********************Another Method:-> getElementbyClassName********************
+
+*************IMP POINT here we WILL NOT ABLE TO USE  'forEach' LOOP SO WE HAVE TO USE IN SUCH WAY ARE written below
+    document.getSelection('list-item')
+Selection {anchorNode: null, anchorOffset: 0, focusNode: null, focusOffset: 0, isCollapsed: true, …}
+document.getElementsByClassName('list-item')
+HTMLCollection(6) [li.list-item, li.list-item, li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-itemaccessKey: ""ariaAtomic: nullariaAutoComplete: nullariaBrailleLabel: nullariaBrailleRoleDescription: nullariaBusy: nullariaChecked: nullariaColCount: nullariaColIndex: nullariaColSpan: nullariaCurrent: nullariaDescription: nullariaDisabled: nullariaExpanded: nullariaHasPopup: nullariaHidden: nullariaInvalid: nullariaKeyShortcuts: nullariaLabel: nullariaLevel: nullariaLive: nullariaModal: nullariaMultiLine: nullariaMultiSelectable: nullariaOrientation: nullariaPlaceholder: nullariaPosInSet: nullariaPressed: nullariaReadOnly: nullariaRelevant: nullariaRequired: nullariaRoleDescription: nullariaRowCount: nullariaRowIndex: nullariaRowSpan: nullariaSelected: nullariaSetSize: nullariaSort: nullariaValueMax: nullariaValueMin: nullariaValueNow: nullariaValueText: nullassignedSlot: nullattributeStyleMap: StylePropertyMap {size: 0}attributes: NamedNodeMap {0: class, class: class, length: 1}autocapitalize: ""autofocus: falsebaseURI: "https://didactic-palm-tree-7jjppg54v6q2xwpj-5500.app.github.dev/05_Doms/one.html"childElementCount: 0childNodes: NodeList [text]children: HTMLCollection []classList: DOMTokenList ['list-item', value: 'list-item']className: "list-item"clientHeight: 18clientLeft: 0clientTop: 0clientWidth: 926contentEditable: "inherit"dataset: DOMStringMap {}dir: ""draggable: falseeditContext: nullelementTiming: ""enterKeyHint: ""firstChild: textfirstElementChild: nullhidden: falseid: ""inert: falseinnerHTML: "one"innerText: "one"inputMode: ""isConnected: trueisContentEditable: falselang: ""lastChild: textlastElementChild: nulllocalName: "li"namespaceURI: "http://www.w3.org/1999/xhtml"nextElementSibling: li.list-itemnextSibling: textnodeName: "LI"nodeType: 1nodeValue: nullnonce: ""offsetHeight: 18offsetLeft: 48offsetParent: body.bg-blackoffsetTop: 259offsetWidth: 926onabort: nullonanimationend: nullonanimationiteration: nullonanimationstart: nullonauxclick: nullonbeforecopy: nullonbeforecut: nullonbeforeinput: nullonbeforematch: nullonbeforepaste: nullonbeforetoggle: nullonbeforexrselect: nullonblur: nulloncancel: nulloncanplay: nulloncanplaythrough: nullonchange: nullonclick: nullonclose: nulloncontentvisibilityautostatechange: nulloncontextlost: nulloncontextmenu: nulloncontextrestored: nulloncopy: nulloncuechange: nulloncut: nullondblclick: nullondrag: nullondragend: nullondragenter: nullondragleave: nullondragover: nullondragstart: nullondrop: nullondurationchange: nullonemptied: nullonended: nullonerror: nullonfocus: nullonformdata: nullonfullscreenchange: nullonfullscreenerror: nullongotpointercapture: nulloninput: nulloninvalid: nullonkeydown: nullonkeypress: nullonkeyup: nullonload: nullonloadeddata: nullonloadedmetadata: nullonloadstart: nullonlostpointercapture: nullonmousedown: nullonmouseenter: nullonmouseleave: nullonmousemove: nullonmouseout: nullonmouseover: nullonmouseup: nullonmousewheel: nullonpaste: nullonpause: nullonplay: nullonplaying: nullonpointercancel: nullonpointerdown: nullonpointerenter: nullonpointerleave: nullonpointermove: nullonpointerout: nullonpointerover: nullonpointerrawupdate: nullonpointerup: nullonprogress: nullonratechange: nullonreset: nullonresize: nullonscroll: nullonscrollend: nullonsearch: nullonsecuritypolicyviolation: nullonseeked: nullonseeking: nullonselect: nullonselectionchange: nullonselectstart: nullonslotchange: nullonstalled: nullonsubmit: nullonsuspend: nullontimeupdate: nullontoggle: nullontransitioncancel: nullontransitionend: nullontransitionrun: nullontransitionstart: nullonvolumechange: nullonwaiting: nullonwebkitanimationend: nullonwebkitanimationiteration: nullonwebkitanimationstart: nullonwebkitfullscreenchange: nullonwebkitfullscreenerror: nullonwebkittransitionend: nullonwheel: nullouterHTML: "<li class=\"list-item\">one</li>"outerText: "one"ownerDocument: documentparentElement: ulparentNode: ulpart: DOMTokenList [value: '']popover: nullprefix: nullpreviousElementSibling: nullpreviousSibling: textrole: nullscrollHeight: 18scrollLeft: 0scrollTop: 0scrollWidth: 926shadowRoot: nullslot: ""spellcheck: truestyle: CSSStyleDeclaration {accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}tabIndex: -1tagName: "LI"textContent: "one"title: ""translate: truetype: ""value: 0virtualKeyboardPolicy: ""[[Prototype]]: HTMLLIElement(...)1: li.list-item2: li.list-item3: li.list-item4: li.list-item5: li.list-itemlength: 6[[Prototype]]: HTMLCollectionitem: ƒ item()length: 1name: "item"arguments: (...)caller: (...)[[Prototype]]: ƒ ()[[Scopes]]: Scopes[0]length: (...)namedItem: ƒ namedItem()constructor: ƒ HTMLCollection()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "HTMLCollection"get length: ƒ length()[[Prototype]]: Object
+const = tempClassListdocument.getElementsByClassName('list-item')
+
+const tempClassList = document.getElementsByClassName('list-item')
+undefined
+
+// here want to use forEach loop which causes error ->
+
+tempClassList.forEach( (list)=> {
+    console.log(list)
+})
+
+VM2763:1 Uncaught TypeError: tempClassList.forEach is not a function
+    at <anonymous>:1:15
+(anonymous) @ VM2763:1
+Array.from(tempClassList)
+
+(6) [li.list-item, li.list-item, li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-item4: li.list-item5: li.list-itemlength: 6[[Prototype]]: Array(0)
+
+// here we can use foreach loop in this way 
+
+const newArray = Array.from(tempClassList)
+undefined
+newArray.forEach( (i) => {
+        i.style.color="yellow"
+})
+undefined
+
+
+-->
+
+<!--
+    innnerContent -> isme sara content show krega including hidden content also
+// innertext -isme wahi shoe krega jo visible hai >  
+// inerHTML -> it gives all HTML values
+// querySelector gives the first "heading" 
