@@ -10,6 +10,26 @@ color: #fff;">
     
 </body>
 <script>
-    
+    const div = document.createElement('div')
+    console.log(div)
+
+    div.className = "mainDiv"
+    div.id = "myId"
+    const num =div.id = Math.round(Math.random()*10 +1)
+    console.log(num)
+   // yahan set attribute directly set krta hai le kr nh aata 
+   div.setAttribute("title", "Google")
+   div.style.backgroundColor = "yellow"
+    div.style.color = "blue"
+
+    // here div is avliable in memory to attach i n page the we use ->
+  
+    // div.innerText= "Vishal Kumar Verma"
+   
+     const addtxt =document.createTextNode("Vishal Verma")
+     div.appendChild(addtxt)
+     document.body.appendChild(div)
+
+
 </script>
 </html>
