@@ -6,8 +6,8 @@
     <title>DOMS | Chai aur Code </title>
 </head>
 <body style="background-color: #212121;
-            color: #ffff;">
-    <div class="parent1">
+            color: #fff;">
+    <div class="parent">
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
@@ -18,21 +18,39 @@
     </div>
 </body>
 <script>
-    const parent1 = document.querySelector('.parent1')
-    console.log(parent1);
-    console.log(parent1.children);
-    console.log(parent1.children[1].innerHTML);
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
 
-    for(let i=0;i<parent1.children[i].innerHTML;i++){
-        console.log(parent.children[i],innerHTML);
+    for (let i=0 ; i < parent.children.length; i++) {
+       console.log(parent.children[i].innerHTML);
+       if(i%2 == 0){
+       console.log(parent.children[i].style.color ="red");
+
+       }else{
+       console.log(parent.children[i].style.color ="yellow");
+
+       } 
     }
+    //console.log(parent.children.FirstElementChild.innerHTML)
+   const dayone =document.querySelector('.day')
+   console.log(dayone.innerHTML)
+   console.log(dayone.nextSibling)
 
-    parent.children[1].style.color = "red";
+//<!-- Behind the scene nodes play too many roles-->
 
-    const day1 = document.quearySelector('.day')
-    console.log(day1)
+   console.log("NODES:", parent.childNodes);
+
+
+
+
+   // console.log(parent.childeren);
+
+
+  
     
-    
+
 
     
     
