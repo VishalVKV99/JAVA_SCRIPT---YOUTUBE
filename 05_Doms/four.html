@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code  | DOM </title>
+</head>
+<body style="background-color: #212121;
+color: #fff;">
+
+    <ul class = " Language">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>Ruby</li>
+    </ul>
+    </body>
+    <script> 
+    // NOTE : for large scale method thhis is not Optimized Code.
+        function addLang(langName){
+            const li = document.createElement('li');
+            li.innerHTML = `${langName}`
+            document.querySelector('.Language'). // yahan class name aayega
+            appendChild(li)
+        }
+        addLang("Java")
+        addLang("C")
+        addLang("React")
+        addLang("Mongo-DB")
+
+
+
+        // here Optimized way data or list is added if any numbers of list are already exists
+        //here we dont have to transverse Tree 
+        function addOptLang(addLangName){
+            
+                const li = document.createElement('li')
+                li.appendChild(document.createTextNode(addLangName))
+                document.querySelector('.Language').appendChild(li)
+            }
+            addOptLang('Type-Script')
+
+            // replce or edit
+             
+            const secLang = document.querySelector("li:nth-child(5)")
+            
+            //here it is not optimized⬇️
+             //secLang.innerHTML = "Hello"
+
+             // below are optimized 
+             const newli = document.createElement('li')
+             newli.textContent = "Hello"
+             secLang.replaceWith(newli)
+
+             // remove or edit
+             const firstLang = document.querySelector("li:first-child")
+             //change
+             firstLang.outerHTML = '<li>Type-Script</li>'
+
+             //remove
+             const removeEle = document.querySelector('li:last-child')
+             removeEle.remove()
+
+
+    </script>
+    </html>
