@@ -1,2 +1,2 @@
-# JAVA_SCRIPT---YOUTUBE
+# JAVA_SCRIPT
 Learning Javascript ﻿
